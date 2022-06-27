@@ -20,6 +20,9 @@ body {
 
 .nopoint {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .conteiner {
@@ -46,7 +49,7 @@ body {
 /* Колір та шрифт логотипу */
 .logo {
     display: inline-block;
-    margin: 24px 0 0 0;
+
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -64,11 +67,11 @@ body {
 }
 
 /* Блок nav та contact */
-.nav-list,
+/* .nav-list,
 .contact-list {
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Колір шрифта навігації та контактів header */
 .nav-link,
@@ -89,6 +92,7 @@ body {
 }
 
 .footer .contact-link{
+    margin-top: 9px;
     font-weight: 400;
     letter-spacing: 0.03em;
 
@@ -144,12 +148,12 @@ body {
 
     background-color: var(--backgroundbutton-color);
     color: var(--backgroundbody-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    
 }
 
 .herro-btn:hover, 
@@ -185,18 +189,38 @@ body {
     padding-right: 0;
 }
 
+/* Conteiner About */
+.about.conteiner {
+    margin-top: 0;
+}
+
+/* Conteiner Workers */
+.workers>.conteiner {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Conteiner Footer */
+.footer>.conteiner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 /* Titles */
 .aside-title, 
 .about-title,
 .workers-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
-.aside-title {
-    margin-top: 0;
-    margin-bottom: 0;
+
+.about-title {
+    margin-bottom: 50px;
 }
 
 /* Subtitle */
@@ -211,6 +235,9 @@ body {
 }
 
 .workers-subtitle {
+    margin-top: 30px;
+    margin-bottom: 0;
+
     font-size: 16px;
     line-height: 1.19;
     font-weight: 500;
@@ -235,6 +262,9 @@ body {
 }
 
 .workers-desc {
+    margin-top: 10px;
+    margin-bottom: 0;
+   
     line-height: 1.19;
     
     color: var(--paragraphs-color);
@@ -247,9 +277,34 @@ body {
 }
 
 .address {
+    margin-top: 20px;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
 
     color: var(--title-color);
+}
+
+.address p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Експеремент!!!!!!! */
+.workers-item{
+    /* border: 2px solid red; */
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+
+    width: 270px;
+    /* height: 368px; */
+    background-color: var(--title-color);
+    text-align: center;
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    /* margin-bottom: 5px; */
+}
+
+.about-item {
+    height: 294px;
 }
