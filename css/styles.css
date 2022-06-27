@@ -22,6 +22,16 @@ body {
     list-style: none;
 }
 
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+
+    outline: 2px solid tomato;
+}
+
 /* Фон herro та footer*/
 .herro, 
 .footer {
@@ -35,12 +45,14 @@ body {
 
 /* Колір та шрифт логотипу */
 .logo {
+    display: inline-block;
+    margin: 24px 0 0 0;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-
+    
     color: var(--backgroundbutton-color);
 }
 .logo-color {
@@ -51,9 +63,17 @@ body {
     color: var(--title-color);
 }
 
+/* Блок nav та contact */
+.nav-list,
+.contact-list {
+    margin: 0;
+    padding: 0;
+}
+
 /* Колір шрифта навігації та контактів header */
 .nav-link,
 .contact-link {
+    display: inline-block;
     color: var(--subtitles-color);
     
     text-decoration: none;
@@ -86,12 +106,21 @@ body {
 }
 
 /* Herro */
+
+.herro > .conteiner {
+    padding: 200px 15px;
+    text-align: center;
+}
+
 .herro-title {
+    margin: 0 auto ;
+    
+    width: 696px;
+    height: 120px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
 
     color: var(--title-color);
@@ -102,9 +131,17 @@ body {
 .btn-filter-button {
     cursor: pointer;
     font-family: inherit;
+    
+    display: inline-block;
+    border: transparent;
+    border-radius: 4px;
 }
 
 .herro-btn {
+    margin-top: 30px;
+    min-width: 200px;
+    height: 50px;
+
     background-color: var(--backgroundbutton-color);
     color: var(--backgroundbody-color);
 
@@ -112,6 +149,7 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    
 }
 
 .herro-btn:hover, 
@@ -135,6 +173,18 @@ body {
     color: var(--backgroundbody-color);
 }
 
+/* Conteiner Aside */
+.aside.conteiner {
+    margin-top: 94px;
+}
+
+.aside-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* Titles */
 .aside-title, 
 .about-title,
@@ -144,9 +194,16 @@ body {
     line-height: 1.17;
     text-align: center;
 }
+.aside-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 /* Subtitle */
 .aside-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 1.14;
     font-weight: 700;
@@ -168,6 +225,9 @@ body {
 
 /* Desc(Text) */
 .aside-desc {
+    margin-top: 10px;
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 1.71;
 
