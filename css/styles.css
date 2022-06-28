@@ -130,6 +130,11 @@ body {
     color: var(--title-color);
 }
 
+.portfolio {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* Колір та фон кнопок */
 .herro-btn,
 .btn-filter-button {
@@ -163,6 +168,9 @@ body {
 }
 
 .btn-filter-button {
+    height: 38px;
+    padding: 6px 22px;
+
     background-color: var(--backgroundphoto-color);
     color: var(--subtitles-color);
 
@@ -171,10 +179,32 @@ body {
     line-height: 1.63;
 }
 
+.first {
+    min-width: 73px;
+}
+.second {
+    min-width: 128px;
+}
+.third {
+    min-width: 145px;
+}
+.forth {
+    min-width: 103px;
+}
+.fivth {
+    min-width: 130px;
+}
+
 .btn-filter-button:hover,
 .btn-filter-button:focus {
     background-color: var(--backgroundbutton-color);
     color: var(--backgroundbody-color);
+}
+
+.btn-filter h2,
+.project h2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Conteiner Aside */
@@ -244,6 +274,9 @@ body {
 }
 
 .project-subtitle {
+    margin-top: 20px;
+    margin-bottom: 0;
+
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
@@ -271,6 +304,9 @@ body {
 }
 
 .project-desc {
+    margin-top: 4px;
+    margin-bottom: 0;
+
     line-height: 1.88;
 
     color: var(--paragraphs-color);
@@ -298,7 +334,7 @@ body {
 
     width: 270px;
     /* height: 368px; */
-    background-color: var(--title-color);
+    background-color: var(--backgroundbody-color);
     text-align: center;
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -307,4 +343,16 @@ body {
 
 .about-item {
     height: 294px;
+}
+
+.project-item {
+    /* border: 2px solid red; */
+    padding-bottom: 20px;
+    width: 372px;
+    height: 406px;
+
+    border: 1px solid #EEEEEE;
+    /* height: 368px; */
+
+    /* margin-bottom: 5px; */
 }
