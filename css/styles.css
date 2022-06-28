@@ -18,11 +18,18 @@ body {
     letter-spacing: 0.03em;
 }
 
+img, 
+button, 
+a {
+    display: block;
+}
+
 .nopoint {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .conteiner {
@@ -48,7 +55,6 @@ body {
 
 /* Колір та шрифт логотипу */
 .logo {
-    display: inline-block;
 
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -66,19 +72,40 @@ body {
     color: var(--title-color);
 }
 
-/* Блок nav та contact */
-/* .nav-list,
-.contact-list {
-    margin: 0;
-    padding: 0;
-} */
+/*Header */
+.header {
+    display: flex;
+    align-items: center;
 
-/* Колір шрифта навігації та контактів header */
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header .contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item + .nav-item {
+    margin-left: 50px;
+}
+
+.header .contact-item + .contact-item {
+    margin-left: 50px;
+}
+
 .nav-link,
 .contact-link {
     display: inline-block;
+    /* padding-top: 4px;
+    padding-bottom: 4px; */
+
     color: var(--subtitles-color);
-    
     text-decoration: none;
 
     font-weight: 500;
@@ -135,18 +162,21 @@ body {
     margin-bottom: 0;
 }
 
-/* Колір та фон кнопок */
+/* Button */
 .herro-btn,
 .btn-filter-button {
+    /* display: inline-block; */
     cursor: pointer;
     font-family: inherit;
     
-    display: inline-block;
     border: transparent;
     border-radius: 4px;
+    
 }
 
 .herro-btn {
+    display: inline-block;
+    
     margin-top: 30px;
     min-width: 200px;
     height: 50px;
@@ -210,13 +240,6 @@ body {
 /* Conteiner Aside */
 .aside.conteiner {
     margin-top: 94px;
-}
-
-.aside-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 /* Conteiner About */
@@ -339,10 +362,6 @@ body {
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     /* margin-bottom: 5px; */
-}
-
-.about-item {
-    height: 294px;
 }
 
 .project-item {
