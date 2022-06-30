@@ -44,7 +44,7 @@ a {
 }
 
 /* Фон herro та footer*/
-.herro, 
+.herro,
 .footer {
     background-color: var(--backgroundhf-color);
 }
@@ -74,17 +74,22 @@ a {
 
 /*Header */
 .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .conteiner {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+}
 
-    border-bottom: 1px solid #ECECEC;
+.nav {
+    margin-left: 93px;
 }
 
 .nav-list {
     display: flex;
-    margin-left: 93px;
 }
 
 .header .contact-list {
@@ -117,9 +122,12 @@ a {
     color: var(--paragraphs-color);
 }
 
-.footer .contact-link{
+.footer .contact-item-mail {
     margin-top: 9px;
+    margin-bottom: 9px;
+}
 
+.footer .contact-link{
     color: rgba(255, 255, 255, 0.6);
 
     font-weight: 400;
@@ -138,7 +146,7 @@ a {
 
 /* Herro */
 
-.herro > .conteiner {
+.herro {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -168,12 +176,12 @@ a {
 }
 
 .btn-filer-list {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center
 }
-.btn-filter-item{
-    margin-right: 4px;
-    margin-left: 4px;
+.btn-filter-item:not(:last-child) {
+    margin-right: 8px;
 } 
 
 .herro-btn,
@@ -253,8 +261,9 @@ a {
 } */
 
 /* Conteiner Aside */
-.aside.conteiner {
-    margin-top: 94px;
+.aside{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .aside-list {
@@ -271,9 +280,8 @@ a {
 }
 
 /* Conteiner About */
-.about.conteiner {
-    margin-top: 94px;
-    margin-bottom: 94px;
+.about{
+    padding-bottom: 94px;
 }
 
 .about-list {
@@ -290,7 +298,7 @@ a {
 }
 
 /* Conteiner Workers */
-.workers>.conteiner {
+.workers {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -301,7 +309,6 @@ a {
 }
 
 .workers-item {
-    padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
 
     width: calc((100% - 90px) / 4);
@@ -316,10 +323,17 @@ a {
     margin-right: 30px;
 }
 
+.workers-div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* Conteiner Project */
-.project {
-    margin-top: 50px;
-    margin-bottom: 94px;
+.project-subitem {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .project-list {
@@ -329,15 +343,12 @@ a {
 }
 
 .project-item {
-    padding-bottom: 20px;
-
     width: calc((100% - 60px) / 3);
 
-    border: 1px solid #EEEEEE;
 }
 
 /* Conteiner Footer */
-.footer>.conteiner {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -371,7 +382,7 @@ a {
 }
 
 .workers-subtitle {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 0;
 
     font-size: 16px;
@@ -380,9 +391,9 @@ a {
 }
 
 .project-subtitle {
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: 24px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-left: 0px;
 
     font-size: 18px;
     line-height: 2;
@@ -411,9 +422,9 @@ a {
 }
 
 .project-desc {
-    margin-top: 4px;
-    margin-bottom: 0;
-    margin-left: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 
     color: var(--paragraphs-color);
 
