@@ -19,17 +19,18 @@ body {
 }
 
 img, 
-button, 
 a {
     display: block;
 }
 
+/* Утіліти */
+
 .nopoint {
-    list-style: none;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
+    list-style: none;
 }
 
 .conteiner {
@@ -39,7 +40,7 @@ a {
     padding-right: 15px;
     width: 1200px;
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* Фон herro та footer*/
@@ -55,14 +56,13 @@ a {
 
 /* Колір та шрифт логотипу */
 .logo {
+    color: var(--backgroundbutton-color);
 
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    
-    color: var(--backgroundbutton-color);
 }
 .logo-color {
     color: #000000;
@@ -76,9 +76,10 @@ a {
 .header {
     display: flex;
     align-items: center;
-
     padding-top: 24px;
     padding-bottom: 25px;
+
+    border-bottom: 1px solid #ECECEC;
 }
 
 .nav-list {
@@ -102,8 +103,6 @@ a {
 .nav-link,
 .contact-link {
     display: inline-block;
-    /* padding-top: 4px;
-    padding-bottom: 4px; */
 
     color: var(--subtitles-color);
     text-decoration: none;
@@ -120,10 +119,11 @@ a {
 
 .footer .contact-link{
     margin-top: 9px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 .nav-link:hover, 
@@ -139,22 +139,22 @@ a {
 /* Herro */
 
 .herro > .conteiner {
-    padding: 200px 15px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
 .herro-title {
-    margin: 0 auto ;
-    
+    margin: 0 auto ;  
     width: 696px;
-    height: 120px;
+
+    color: var(--title-color);
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    color: var(--title-color);
 }
 
 .portfolio {
@@ -163,8 +163,11 @@ a {
 }
 
 /* Button */
-.btn-filer-list {
+.btn-filter {
     margin-top: 94px;
+}
+
+.btn-filer-list {
     display: flex;
     justify-content: center
 }
@@ -175,7 +178,6 @@ a {
 
 .herro-btn,
 .btn-filter-button {
-    /* display: inline-block; */
     cursor: pointer;
     font-family: inherit;
     
@@ -186,10 +188,10 @@ a {
 
 .herro-btn {
     display: inline-block;
-    
-    margin-top: 30px;
+
     min-width: 200px;
-    height: 50px;
+    margin-top: 30px;
+    padding: 10px 32px;
 
     background-color: var(--backgroundbutton-color);
     color: var(--backgroundbody-color);
@@ -244,11 +246,11 @@ a {
     color: var(--backgroundbody-color);
 }
 
-.btn-filter h2,
+/* .btn-filter h2,
 .project h2 {
     margin-top: 0;
     margin-bottom: 0;
-}
+} */
 
 /* Conteiner Aside */
 .aside.conteiner {
@@ -271,6 +273,7 @@ a {
 /* Conteiner About */
 .about.conteiner {
     margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .about-list {
@@ -288,7 +291,6 @@ a {
 
 /* Conteiner Workers */
 .workers>.conteiner {
-    margin-top: 94px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -303,11 +305,11 @@ a {
     border-radius: 0px 0px 4px 4px;
 
     width: calc((100% - 90px) / 4);
+
     background-color: var(--backgroundbody-color);
     text-align: center;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    /* margin-bottom: 5px; */
 }
 
 .workers-item:not(:last-child) {
@@ -315,18 +317,23 @@ a {
 }
 
 /* Conteiner Project */
-.project-item {
-    padding-bottom: 20px;
-    width:calc((100% - 60px) / 3);
-    border: 1px solid #EEEEEE;
+.project {
+    margin-top: 50px;
+    margin-bottom: 94px;
 }
 
 .project-list {
-    margin-top: 50px;
-    margin-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.project-item {
+    padding-bottom: 20px;
+
+    width: calc((100% - 60px) / 3);
+
+    border: 1px solid #EEEEEE;
 }
 
 /* Conteiner Footer */
@@ -388,19 +395,19 @@ a {
     margin-top: 10px;
     margin-bottom: 0;
 
+    color: var(--paragraphs-color);
+
     font-size: 14px;
     line-height: 1.71;
-
-    color: var(--paragraphs-color);
 }
 
 .workers-desc {
     margin-top: 10px;
     margin-bottom: 0;
+
+    color: var(--paragraphs-color);
    
     line-height: 1.19;
-    
-    color: var(--paragraphs-color);
 }
 
 .project-desc {
@@ -408,18 +415,19 @@ a {
     margin-bottom: 0;
     margin-left: 24px;
 
-    line-height: 1.88;
-
     color: var(--paragraphs-color);
+
+    line-height: 1.88;
 }
 
 .address {
     margin-top: 20px;
+
+    color: var(--title-color);
+
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-
-    color: var(--title-color);
 }
 
 .address p {
