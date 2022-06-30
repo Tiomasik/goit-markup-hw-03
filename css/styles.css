@@ -122,8 +122,7 @@ a {
     color: var(--paragraphs-color);
 }
 
-.footer .contact-item-mail {
-    margin-top: 9px;
+.footer .contact-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -172,7 +171,8 @@ a {
 
 /* Button */
 .btn-filter {
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .btn-filer-list {
@@ -433,6 +433,7 @@ a {
 
 .address {
     margin-top: 20px;
+    margin-bottom: 9px;
 
     color: var(--title-color);
 
